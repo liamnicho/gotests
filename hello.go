@@ -11,6 +11,17 @@ func Hello(name string) string {
 	return englishHelloPrefix + name
 }
 
+func Liam(name string, language string) string {
+	if name == "" {
+		name = "World"
+	}
+
+	if language == "Spanish" {
+		return "Hola, " + name
+	}
+	return englishHelloPrefix + name
+}
+
 func main() {
 	fmt.Println(Hello("world"))
 }
